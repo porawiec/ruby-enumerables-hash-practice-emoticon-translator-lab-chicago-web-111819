@@ -1,10 +1,11 @@
 # require modules here
+require 'pp'
 require "yaml"
 
 def load_library(file_path)
   emotes = YAML.load_file(file_path)
   emotes = {"get_meaning" => {}, "get_emoticon" => {} }
-  emotes
+  pp emotes
 end
 
 def get_japanese_emoticon
