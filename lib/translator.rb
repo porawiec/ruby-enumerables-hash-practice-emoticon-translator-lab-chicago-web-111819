@@ -6,8 +6,8 @@ def load_library(file_path)
   emotes = {"get_meaning" => {}, "get_emoticon" => {} }
   YAML.load_file(file_path).each do | meaning, ej_array |
     english, japanese = ej_array
-    emotes["get_meaning"] = meaning
-    emotes["get_emoticon"] = japanese
+    emotes["get_meaning"][english] = meaning
+    emotes["get_emoticon"][japanese] = japanese
   end
   pp emotes
 end
