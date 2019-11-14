@@ -8,7 +8,7 @@ def load_library(file_path)
     p english, japanese = ej_array
 
   end
-  pp emotes
+  emotes
 end
 
 def get_japanese_emoticon
