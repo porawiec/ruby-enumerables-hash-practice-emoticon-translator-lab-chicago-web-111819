@@ -5,6 +5,8 @@ require "yaml"
 def load_library(file_path)
   emotes = {"get_meaning" => {}, "get_emoticon" => {} }
   YAML.load_file(file_path).each do
+
+  end
   pp emotes
 end
 
